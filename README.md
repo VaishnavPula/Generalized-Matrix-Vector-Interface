@@ -2,7 +2,7 @@
 
 **A Python framework for working with multiple matrix representations through a unified interface.**
 
-**Author:** Vaishnav Pula
+*Author:* Vaishnav Pula
 
 ---
 
