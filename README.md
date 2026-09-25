@@ -145,6 +145,3 @@ Test execution screenshots are available in the **`Screenshots/`** directory.
 
 ---
 
-## Author
-
-**Vaishnav Pula**
