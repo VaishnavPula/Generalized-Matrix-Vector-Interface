@@ -1,3 +1,4 @@
+**Author:** Vaishnav Pula
 # Generalized Matrix and Vector Interface
 
 A Python-based generalized matrix and vector framework that provides a common interface for multiple matrix representations, including Dense, CSR, Banded, and Block matrices.
