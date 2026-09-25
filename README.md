@@ -1,58 +1,66 @@
-**Author:** Vaishnav Pula
 # Generalized Matrix and Vector Interface
 
-A Python-based generalized matrix and vector framework that provides a common interface for multiple matrix representations, including Dense, CSR, Banded, and Block matrices.
+**A Python framework for working with multiple matrix representations through a unified interface.**
 
-The project demonstrates matrix abstraction, matrix-vector multiplication, transpose operations, iterative numerical algorithms, cross-backend correctness testing, and performance measurement.
+**Author:** Vaishnav Pula
 
 ---
 
 ## Overview
 
-The project implements a common abstract `Matrix` interface that allows different matrix representations to be used with the same algorithms.
+This project implements a generalized Matrix and Vector interface that allows multiple matrix representations to be used with the same numerical algorithms.
 
-The following matrix representations are implemented:
+The framework separates **matrix storage** from **numerical computation**, allowing algorithms to operate independently of the underlying matrix representation.
+
+The implemented backends are:
 
 - Dense Matrix
-- CSR Matrix
+- CSR (Compressed Sparse Row) Matrix
 - Banded Matrix
 - Block Matrix
 
-A common interface ensures that algorithms do not need to be rewritten for each matrix representation.
+The project also includes matrix-vector operations, transpose operations, iterative numerical algorithms, cross-backend correctness testing, and performance measurement.
 
 ---
 
-## Features
+## Key Features
 
-- Abstract `Matrix` interface
+- Common abstract `Matrix` interface
 - `Vector` implementation
-- Dense Matrix representation
-- CSR Matrix representation
-- Banded Matrix representation
-- Block Matrix representation
-- Matrix element access using `get(i, j)`
+- Dense matrix representation
+- CSR sparse matrix representation
+- Banded matrix representation
+- Block matrix representation
+- Element access using `get(i, j)`
 - Matrix-vector multiplication
 - Matrix transpose
-- Python `@` operator support for matrix-vector multiplication
+- Python `@` operator support
 - Power Iteration
 - Jacobi Iterative Solver
 - Cross-backend correctness testing
-- Performance measurement
-- Large-scale sparse matrix testing
+- Performance benchmarking
+- Large-scale sparse/banded matrix testing
 
 ---
 
-## Project Structure
+## Architecture
+
+The project follows a backend-independent design:
 
 ```text
-Generalized-Matrix-Vector-Interface/
-│
-├── source_code.py
-├── larger_band_matrix.py
-├── README.md
-├── report.pdf
-├── AI-use-declaration.txt
-│
-└── Screenshots/
-    ├── ...
-    └── ...
+                    Matrix Interface
+                           │
+          ┌────────────────┼────────────────┐
+          │                │                │
+       Dense              CSR            Banded
+          │                │                │
+          └────────────────┼────────────────┘
+                           │
+                         Block
+                           │
+                           ▼
+              Common Numerical Algorithms
+                           │
+              ┌────────────┴────────────┐
+              │                         │
+       Power Iteration          Jacobi Solver
