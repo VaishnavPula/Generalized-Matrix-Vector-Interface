@@ -1,0 +1,7 @@
+## AI-USE DECLARATION
+
+AI assistance was used during the development and preparation of this assignment to help explain programming concepts, clarify the requirements of the assignment, organize and format the README and report, and assist with understanding and preparing test cases and test evidence.
+
+The implementation was developed based on the assignment requirements and the submitted source code. AI assistance was used for guidance and explanation, while the final source code was reviewed and executed by the student to verify its functionality and test results.
+
+The final assignment materials, source code, README, report, and test evidence were reviewed before submission.
