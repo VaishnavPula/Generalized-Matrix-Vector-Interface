@@ -53,6 +53,6 @@ Generalized-Matrix-Vector-Interface/
 ├── report.pdf
 ├── AI-use-declaration.txt
 │
-└── screenshots/
+└── Screenshots/
     ├── ...
     └── ...
