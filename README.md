@@ -52,7 +52,7 @@ The project follows a backend-independent design:
                            │
           ┌────────────────┼────────────────┐
           │                │                │
-       Dense              CSR            Banded
+        Dense              CSR            Banded
           │                │                │
           └────────────────┼────────────────┘
                            │
